@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+** Copyright (c) 2012 Todoroo Inc
+**
+** See the file "LICENSE" for the full license governing this code. 
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/widget_row"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingStart="@dimen/widget_padding"
+  android:paddingEnd="@dimen/widget_padding"
+  android:paddingLeft="@dimen/widget_padding"
+  android:paddingRight="@dimen/widget_padding"
+  android:clickable="false">
+
+  <ImageView
+    android:id="@+id/widget_complete_box"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:paddingStart="0dp"
+    android:paddingEnd="@dimen/widget_padding"
+    android:paddingLeft="0dp"
+    android:paddingRight="@dimen/widget_padding"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toEndOf="@id/widget_complete_box"
+    android:layout_toRightOf="@id/widget_complete_box"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/widget_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="start|center_vertical"
+      android:singleLine="true"
+      android:textAlignment="viewStart"
+      android:textSize="16sp"/>
+
+    <TextView
+      android:id="@+id/widget_due_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:gravity="start|center_vertical"
+      android:singleLine="true"
+      android:textAlignment="viewStart"
+      android:textSize="12sp"
+      android:visibility="gone"/>
+
+  </LinearLayout>
+
+</RelativeLayout>
